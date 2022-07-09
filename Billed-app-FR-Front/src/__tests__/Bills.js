@@ -8,12 +8,10 @@ import BillsUI from "../views/BillsUI.js";
 import { bills } from "../fixtures/bills.js";
 import Bills from "../containers/Bills.js";
 import userEvent from "@testing-library/user-event";
-import LoadingPage from "../views/LoadingPage.js";
 import { localStorageMock } from "../__mocks__/localStorage.js";
 import mockedStore from "../__mocks__/store";
 import { ROUTES, ROUTES_PATH } from "../constants/routes.js";
 import router from "../app/Router.js";
-import { formatDate, formatStatus } from "../app/format.js";
 
 describe("Given I am connected as an employee", () => {
   describe("When I am on Bills Page", () => {
